@@ -1,9 +1,8 @@
 A, B = map(int, input().split())
 number = []
-for x in range (1, 46) :
+for x in range (1, 46) : # 대충 1035번째까지 나온다. 필요한건 1000번째까지
     number += [x] * x
 
-print(len(number))
 print(sum(number[A-1 : B]))
 
 
