@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>글자태그 (inline 성격)</title>
+    <style>
+        span {
+            color: aquamarine;
+            font-weight: 900;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>header</h1>
@@ -14,9 +21,64 @@
     <h2>글자를 꾸며주는 태그들</h2> <!-- 얘내들 붙임 -->
     
     <p> <!-- 부모 태그 -->
-        <!-- 볼드체로 표현 ! / 얘내들 p의 자식 태그이다 -->
+        <!-- 볼드체로 표현 ! -->
         <strong>저자의 강조 표시, 경고의 표시</strong><br/>
         <b>경고의 표시는 아니지만, 굵게 강조하는 경우의 표시</b>
     </p>
+
+    <p>
+        <!-- 이텔릭체! -->
+        <em>강조나 저자의 생각을 나타내는 것</em><br/>
+        <i>이텔릭체를 표현하고 싶을 때</i>
+    </p>
+
+    <p>
+        <!-- 형관팬 효과! -->
+        <mark>중요한 부분을 강조하고 싶을 때</mark>
+    </p>
+
+    <p>
+        <!-- 인용할 때 -->
+        <q>인용할 때</q>
+    </p>
+
+    <p>
+        <!-- 글자를 꾸밀 때 -->
+        영남대 <span>캠퍼스에</span> 봄이 옵니다.
+    </p>
+
+    <p>
+        <!-- 동아시아 글자 표현  -->
+        <ruby>
+        韓国<rp>(</rp><rt>한국</rt><rp>)</rp>
+        </ruby>
+    </p>
+
+    <p>
+        <!-- 문서에서 텍스트 내용 중 일부에 대해 취소를 나타낼 때 ! -->
+        <del>문서에서 삭제 될 부분</del>
+    </p>
+
+    <p>
+        <!-- 밑줄 표현 -->
+        <ins>밑줄을 그어 강조할 때</ins>
+    </p>
+
+    <p>
+        <!-- 위첨자 아래첨자 -->
+        위에 붙는 <sup>위첨자</sup><br/>
+        아래 붙는 <sub>아래첨자</sub>
+    </p>
+
+    <h1>What is Lorem Ipsum?</h1>
+    <p>
+        Lorem <strong>Ipsum is simply dummy</strong> <span>text</span> of the printing and typesetting <em>industry.</em> <mark>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</mark> when an unknown printer took a galley of type and scrambled it to make a type specimen book. <sup>It has survived</sup> not only <sub>five centuries</sub>, but also <del>the leap into electronic typesetting, remaining essentially unchanged.</del> <ins>It was popularised <i>in the 1960s</i> with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like <q>Aldus PageMaker</q> including versions of Lorem Ipsum.</ins>
+    </p>
+
+    <h1>특수문자 표현 ! </h1>
+    <p>
+        &#169; &#8364; &#8593; &#183; &#189;<!-- entity Code -->
+    </p>
+
 </body>
 </html>
