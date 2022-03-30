@@ -1,0 +1,8 @@
+*{
+    padding: 0; /*  */
+    margin: 0;
+}
+
+a{
+    text-decoration: none; /* 밑줄을 지웠다 */
+}
