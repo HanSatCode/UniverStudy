@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            float: left;
+            margin-right: 30px;
+        }
+        .allbox{
+            float: none;
+            border: none;
+            background-color: aquamarine;
+            width: 720px;
+            height: 210px;
+        }
+        .boxs{
+            padding: 30px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="allbox">
+        <div>1</div>
+        <div>2</div>
+        <div class="boxr">3</div>
+    </div>
+    <!-- box-sizing : 박스의 크키를 어떤 것의 기준으로 계산할지 규정하는 속성 -->
+    <div class="boxs">box-sizing</div>
+</body>
+</html>
