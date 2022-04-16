@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset = "utf-8">
+        <title>display</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            div{
+                background-color: darkred;
+                width: 300px;
+                height: 100px;
+                margin: 50px;
+                /* 모든 스타일을 받아 드릴 수 있음 */
+                display: inline;
+            }
+            span{
+                background: darkblue;
+                width: 300px;
+                height: 100px;
+                margin: 50px;
+                /* width, height, margin(top, bottom) 적용되지 않음*/
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- display: 요소를 어떤 성격을 보여줄지 결정하는 속성. -->
+        <!-- block: h1~h6, p, br, hr, blockquote, pre, ul, ol, li -->
+        <!-- inline : strong, b, em, i, q, mark, span, ruby -->
+        <div>block01</div>
+        <div>block02</div>
+        <div>block03</div>
+        <span>inline01</span><span>inline02</span><span>inline03</span>
+    </body>
+</html>
