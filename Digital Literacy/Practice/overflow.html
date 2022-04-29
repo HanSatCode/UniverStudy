@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        *{
+            margin: 0;
+            margin: 0;
+        }
+        body{
+            /* 1920x1080 기본적 데스크탑 해상도. */
+            width: 2000px;
+            height: 1500px;
+            background-color: yellowgreen;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        .contents1 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid rgba(255, 0, 0, 0.563);
+            float: left;
+            margin: 10px;
+        }
+        .contents2 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid rgba(255, 0, 0, 0.563);
+            float: left;
+            margin: 10px;
+        }
+        .contents3 {
+            width: 200px;
+            /* height: 200px; */
+            overflow: hidden;
+            border: 2px solid rgba(255, 0, 0, 0.563);
+            float: left;
+            margin: 10px;
+            /* hidden은 영역을 벗어나는 부분을 보이지 않게 처리*/
+            /* height가 존재하지 않을때 - 높이를 대신
+            높이를 명확히 알 수 없는 경우,
+            그 다음 박스와 맞물리지 않도록 하기위해 주로 사용.
+            내용을 댐처럼 막아준다.*/
+        }
+
+        .contents4 {
+            width: 200px;
+            height: 200px;
+            overflow: scroll;
+            border: 2px solid rgba(255, 0, 0, 0.563);
+            float: left;
+            margin: 10px;
+            /* 폭값이 존재할 때 내용물을 안보이게 처리 */
+        }
+    </style>
+</head>
+<body>
+    <!-- overflow: 부모 박스에서 내용물이 넘치는 경우, 어떻게 보여질지 결정하는 속성 -->
+    <div class="contents1">
+        <h4>콘텐츠 양이 일정(이상적 상황)</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis sequi fuga facilis, soluta voluptatibus omnis quaerat maxime quidem obcaecati impedit atque corrupti, magni nisi quam nihil, enim voluptatem animi odit.
+            A iusto molestias consequuntur incidunt neque saepe quasi libero quibusdam dolores iure? Minima labore consequatur quas laboriosam repellendus! Aut provident quos dignissimos sequi. Voluptate similique, suscipit sed cum tempore nemo?
+        </p>
+    </div>
+
+    <div class="contents2">
+        <h4>콘텐츠 양이 일정(이상적 상황)</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo iste temporibus voluptatum totam. Nihil inventore sed blanditiis, amet ducimus, ipsum ratione sapiente id dignissimos corporis nesciunt, magni natus in? Eos!
+            Quidem nesciunt architecto at obcaecati voluptas culpa nobis optio vero odit commodi? Nulla maiores nam placeat voluptates quas, tempore dolorem, odit ipsam, voluptatibus dolorum magnam. Impedit ab laboriosam et cupiditate.
+        </p>
+    </div>
+
+    <div class="contents3">
+        <h4>콘텐츠 양이 일정(이상적 상황)</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, corrupti molestias. Ipsum reiciendis distinctio hic ipsam magni expedita ducimus obcaecati. Eveniet ut aspernatur amet sed quia? Ex facere dignissimos exercitationem.
+            Repellat minima, distinctio eaque ex blanditiis officiis voluptatibus neque voluptatum veritatis, labore quaerat nulla quasi molestiae. Perspiciatis, et reiciendis quos iure voluptatem in consequuntur animi nostrum qui non, quae quisquam.
+        </p>
+    </div>
+
+    <div class="contents4">
+        <h4>콘텐츠 양이 일정(이상적 상황)</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, corrupti molestias. Ipsum reiciendis distinctio hic ipsam magni expedita ducimus obcaecati. Eveniet ut aspernatur amet sed quia? Ex facere dignissimos exercitationem.
+            Repellat minima, distinctio eaque ex blanditiis officiis voluptatibus neque voluptatum veritatis, labore quaerat nulla quasi molestiae. Perspiciatis, et reiciendis quos iure voluptatem in consequuntur animi nostrum qui non, quae quisquam.
+        </p>
+    </div>
+</body>
+</html>
