@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동위선택자</title>
+    <style>
+        h1+h2{
+            color: red;
+        }
+        h1~h2{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- 동위선택자: 동위관계에 있는 요소 중에 해당요소보다 뒤에 존재하는 특정한 요소를 선택할 때 사용
+    - 선택자A+선택자B 바로 뒤에 위치하는 선택자B를 선택하는 선택자
+    - 선택자~선택자B 선택자A 뒤에 위치하는 선택자B를 선택하는 선택자 -->
+    <h1>제목1</h1>
+    <h2>제목2</h2>
+    <h2>제목3</h2>
+    <h2>제목4</h2>
+    <h2>제목</h2>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>후손선택자 & 자손선택자</title>
+    <style>
+        div>h1{ /* 자손선택자 CSS 문법 */
+            background-color: salmon;
+        }
+        div span{ /* 후손선택자 CSS 문법 */
+            background-color: yellowgreen;
+        }
+        div h2{
+            border: 3px solid aquamarine;
+        }
+        div>h2{
+            border: 3px solid aquamarine;
+        }
+        div span{
+            color: crimson;
+        }
+        .box span{
+            font-size: 40px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 후손선택자: 해당요소의 하위요소 았는 특정한 요소를 선택하는 선택자 | 선택자A 선택자B
+        자손선택자: 해당요소의 바로 밑에 위치하는 특정한 요소를 선택하는 선택자 | 선택자A>선택자B -->
+    <div>
+        <h1>제목1</h1>
+        <h2>제목2</h2>
+        <div class="box">
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li><span>menu3</span></li>
+            </ul>
+        </div>
+        <h2>제목2</h2>
+        <span>span</span>
+    </div>
+</body>
+</html>
