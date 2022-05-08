@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조선택자</title>
+    <style>
+        ul{
+            overflow: hidden;
+        }
+        li{
+            list-style: none;
+            float: left;
+            padding: 15px;
+        }
+        /* li:first-child{
+            background-color: cyan;
+        } */
+        li:last-child{
+            background-color: yellow;
+        }
+        li:nth-child(2n+1){
+            /* 형제관계의 순번째에 위치하는 요소를 선택(1, 2, 3...) 2n+1(홀수) 2n(짝수) */
+            background-color: magenta;
+            color: cyan;
+        }
+        li:nth-child(2n){
+            background-color: gray;
+            color: yellow;
+        }
+        li:nth-child(3){
+            border: 3px solid cyan;
+            background: yellow;
+            color: magenta;
+        }
+        li:nth-child(5) a{
+            color: white;
+            text-decoration: none;
+        }
+        li:nth-last-child(2){
+            font-size: 20px;
+        }
+        .box:first-child{
+            background-color: darkgreen;   
+        }
+        li:nth-child(5):hover{
+            background-color: blueviolet;
+        }
+        li:nth-child(5):hover a{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- 구조선택자: 부모의 요소 안에서 특정한
+    위치의 요소를 선택할 때 사용, 후손+자손
+    선택자와 함께 많이 사용 -->
+    <ul>
+        <li class="box">menu-1</li>
+        <li class="box">menu-2</li>
+        <li class="box">menu-3</li>
+        <li class="box">menu-4</li>
+        <li class="box"><a href='#'>menu-5</a></li>
+        <li class="box">menu-6</li>
+    </ul>
+</body>
+</html>

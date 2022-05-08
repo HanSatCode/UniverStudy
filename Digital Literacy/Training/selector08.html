@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상태선택자</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        input[type='text']{
+            background-color: coral;
+        }
+        input:focus{
+            background-color: aqua;
+        }
+        div{
+            width: 650px;
+            height: 300px;
+            background-color: antiquewhite;
+            overflow: hidden;
+        }
+        input[type='checkbox']:checked+div{
+            background-color: aqua;
+            /* A+B동위선택자 바로 뒤에 위치하는 특정요소를 선택 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 상태선택자 : 마우스의 반응에 따른 상태를 선택 -->
+    <input type="text">
+    <br>
+    <input type="checkbox">
+    <div>
+        <h1>Lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sint quidem perferendis, suscipit totam quasi provident accusamus expedita, dignissimos inventore aliquam alias saepe. Quisquam, non distinctio! Eos, laboriosam? Porro, atque.
+        Blanditiis, veritatis quam deserunt qui consequuntur id commodi maxime dicta aut, amet, atque perspiciatis adipisci exercitationem! Illo et aliquam deleniti nam corrupti officiis mollitia. Laudantium nihil maxime perferendis porro repellendus.
+        Similique commodi nulla quae accusamus voluptate magni, aut explicabo, magnam saepe soluta quod. Error, fugit ullam voluptatem sunt libero blanditiis quos quo doloribus placeat dignissimos culpa! Placeat accusamus cum enim?
+        Dolores ullam libero totam laboriosam, voluptate expedita accusantium provident ipsa suscipit itaque officia, similique quibusdam ipsum ipsam pariatur vel nam obcaecati consectetur quis placeat reprehenderit temporibus aspernatur. Vitae, facere tempore.
+        Aliquid nulla quaerat mollitia ipsum molestias nihil qui earum molestiae impedit iure quidem quam soluta eaque voluptate nam ratione, repudiandae sequi eos culpa veritatis quo omnis error obcaecati blanditiis? Excepturi.</p>
+    </div>
+</body>
+</html>
