@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멀티미디어</title>
+</head>
+<body>
+    <h1>멀티미디어</h1>
+    <!-- HTML5에서 음악이나 오디오같은 사운드를 재생하기 위해 사용.
+    src: 오디오 파일의 위치를 연결
+    controls: 화면에서 재생 컨트룰 막대 표시
+    muted: 오디오가 재생중이지만 소리를 끔 (음소거)
+    loop: 반복 재생 -->
+
+    <!-- <audio src="src/test_ado.mp3" controls loop></audio> -->
+    
+    <!-- video : HTML5에서 영상을 실행시키기 위해 사용,
+    비디오와 같은 영상 스트르밍을 재생할 때 사용
+    src: 비디오 파일의 링크를 연결
+    controls: 비디오 재생 컨트룰 막대 표시
+    muted: 음소거 / 비디오는 재생
+    width: "가로폭"
+    height: "높이"
+    poster: "비디오 재생 시작전 준비화면, 시작 이미지(url연결)"
+    - 연결하지 않을 시 영상의 시작화면 -->
+    <!-- <video src="src/korea_video.mp4" controls muted poster="src/bg.PNG" width="400" height="200"></video> -->
+
+    <!-- iframe: 내부프레임/HTML5 문서안에 HTML 문서가 존재
+    긴 내용의 문서, 유튜브 영상 등 큰 용량의 영상을 간단하게 링크로 가져올 때 많이 사용
+    src: 가져올 링크 지정
+    width: 가로
+    height: 높이 -->
+
+    <iframe src="media01.html" width="400" height="400"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Yp9bj7Wft0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

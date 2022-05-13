@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>폰트</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        *{
+        @font-face {
+            font-family: 'TmonMonsori';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+       *{
             padding: 0;
             margin: 0;
         }
@@ -16,10 +22,13 @@
             font-size: 14px;
         }
         .test1{
-            font-family:'Courier New', Courier, monospace
+            font-family: 'Hahmlet', serif;
         }
         .test2{
-            font-family: 'Noto Sans KR', sans-serif;
+            font-family: 'Hahmlet', serif;
+        }
+        .test3{
+            font-family: 'TmonMonsori';
         }
     </style>
 </head>
@@ -29,9 +38,14 @@
         webfont - 링크, 도메인, 브라우저와 상관없이 웹페이지에서 폰트가 연결되어지는 것으로<br>
         일반적으로 스타일을 이용해서 연결하는 방법<br>
         - 내 컴퓨터에 설치된 폰트가 존재
-    </p>
+    </p><br>
     <p class="test2">
         webfont-cdn 링크를 이용해서 서버상의 폰트를 가져와서 웹페이지에 전달하는 방법
+    </p><br><br>
+    <p class="test3">
+       @font-face
+       : 폰트파일을 다운받거나 가져와 문서와 직접 연결하여 폰트를 선언하는 방식.
+       빠르게 웹사이트에 적용. 오류가 적음
     </p>
 </body>
 </html>
