@@ -3,9 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>사용자의 입력 양식 태그</title>
+    <title>입력양식태그</title>
 </head>
 <body>
-    
+    <!-- 웹페이지에서의 입력양식의 그룹
+        원하는 정보를 연결하여 전달받기 위한 명확한 폼 양식
+        
+        name : 폼의 이름 / 식별하기 위한 이름을 지정
+        maethod : 폼을 서버로 전송할 때 HTTP메소드를 지정 (전송방식)
+            get - 주소표시줄에 사용자가 입력한 내용이 그대로 표시
+            post - 대부분이 사용하는 방식 내부적으로 보이지 않게 전송 -->
+
+    <form>
+        <!-- fieldset : 특정한 엘리먼트끼리 그룹화
+            legend : fieldset 안에서 정의를 부여
+            label : 해당 서식의 용도, 내용 -->
+
+        <fieldset>
+            <legend>개인정보작성</legend>
+            <label>ID</label>
+            <input type="text" name="id">
+        </fieldset><br><br>
+        
+        <!-- 비밀번호 입력양식 - 암호화된 입력 -->
+        <label>PW</label>
+        <input type="password" name="pw">
+        <br><br>
+
+        <!-- 전화번호 입력양식 - 모바일 확인 시 숫자 키패드 -->
+        <input type="tel" placeholder="010-1234-5678" name="tel">
+        <br><br>
+
+        <!-- 체크 박스 - 다중 선택 혹은 선택 시 사용 -->
+        <input type="checkbox" name="ch">
+        <input type="checkbox" name="ch">
+        <input type="checkbox" name="ch">
+        <input type="checkbox" name="ch">
+        <input type="checkbox" name="ch">
+        <br>
+        <input type="radio" name="r">
+        <input type="radio" name="r">
+        <input type="radio" name="r">
+        <input type="radio" name="r">
+        <input type="radio" name="r">
+        <br><br>
+        <!--  버튼 - submit(제출확인), reset(회수 다시)-->
+        <input type="submit" value="확인하기" name="btn">
+        <input type="reset" value="취소하기" name="btn">
+        <br><br>
+
+    <!-- 버튼태그, types='button' 일반형태 -->
+        <button type="button">버튼</button>
+        <br><br>
+
+        <!-- 셀렉트박스 : 펼쳐진 상태에서 항목을 고르는 서식 -->
+        <select>
+            <option>한국어</option>
+            <option>중국어</option>
+            <option>일본어</option>
+            <option>베트남어</option>
+            <option>스페인어</option>
+            <option>영어</option>
+        </select><br><br>
+        
+        <!-- 많은 내용의 글을 넣을 때 사용하는 태그 -->
+        <textarea>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ullam ab architecto error cum quis repellendus necessitatibus earum similique accusantium, laboriosam tenetur labore, blanditiis aliquam saepe exercitationem non inventore a!
+            Ipsum voluptates incidunt animi molestias fugit natus non, dicta, beatae minus dolores culpa. Maxime fugiat architecto officiis mollitia nemo, laboriosam dignissimos sit quas impedit, et deleniti veniam voluptates debitis voluptatem.
+        </textarea>
+    </form>
 </body>
 </html>
