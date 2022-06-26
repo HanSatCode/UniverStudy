@@ -1,24 +1,24 @@
-chess = []
-result = 0
-y = 0
+n = input()
+Cycle = 0
+R = 0
 
-for x in range (0, 8) :
-    chess.append(list(str(input())))
-
-while True :
-
-    y += 1
-
-    if y%2 != 0 :
-        for x in range (0, 7, 2) :
-            if chess[y-1][x] == 'F' :
-                result += 1
+while n != R :
+    Cycle += 1
+    if Cycle == 1 :
+        if len(n) == 1 :
+            n = str(0) + n
+        tempA = int(n[0]) + int(n[1])
+        if tempA < 10 :
+            R = n[1] + str(tempA)
+        else :
+            R = n[1] + str(tempA)[1]
     else :
-        for x in range(1, 8, 2) :
-            if chess[y-1][x] == 'F' :
-                result += 1
-
-    if y == 8 :
-        break
-
-print(result)
+        if len(R) == 1 :
+            n = str(0) + n
+        tempA = int(R[0]) + int(R[1])
+        if tempA < 10 :
+            R = R[1] + str(tempA)
+        else :
+            R = R[1] + str(tempA)[1]
+else :
+    print(Cycle)
